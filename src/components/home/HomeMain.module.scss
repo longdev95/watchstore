@@ -1,0 +1,46 @@
+.homemain {
+    @apply text-white flex items-center justify-between h-[100px] max-w-[1200px] px-[15px] mx-auto;
+
+    &-bars {
+        @apply hidden mobile:block;
+    }
+    &-logo {
+        img {
+            @apply w-[250px] h-auto;
+        }
+    }
+
+    &-search {
+        @apply flex-1 mobile:hidden;
+
+        &-form {
+            @apply flex items-center justify-center w-[100%];
+
+            input {
+                @apply w-[70%] max-w-[400px] h-[40px] text-black bg-white p-2 rounded-l-md border-none focus:outline-none;
+
+                &:placeholder {
+                    @apply text-sm;
+                }
+            }
+
+            &-button {
+                @apply h-[40px] w-[50px] bg-primary-color border-primary-color rounded-r-md flex items-center justify-center hover:bg-[#b46f41] hover:transition-colors hover:duration-300 hover:ease-in cursor-pointer;
+            }
+        }
+    }
+
+    &-info {
+        @apply flex items-center gap-5;
+
+        a {
+            @apply text-[14px] font-bold mobile:hidden;
+        }
+        &-heart {
+            @apply mobile:hidden;
+        }
+        &-cart {
+            @apply border-2 px-[8px] py-[2px] text-primary-color;
+        }
+    }
+}

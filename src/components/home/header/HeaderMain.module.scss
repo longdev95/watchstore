@@ -1,5 +1,5 @@
-.homemain {
-    @apply text-white flex items-center justify-between h-[100px] max-w-[1200px] px-[15px] mx-auto;
+.main {
+    @apply text-white flex items-center justify-between h-[100px] max-w-[1200px] px-[15px] mx-auto bg-second-color;
 
     &-bars {
         @apply hidden mobile:block;
@@ -17,7 +17,7 @@
             @apply flex items-center justify-center w-[100%];
 
             input {
-                @apply w-[70%] max-w-[400px] h-[40px] text-black bg-white p-2 rounded-l-md border-none focus:outline-none;
+                @apply w-[70%] max-w-[400px] h-[40px] text-black bg-white p-2 rounded-l-md border-none focus:outline-none hover:shadow-[0_0_5px_2px_#9494E4];
 
                 &:placeholder {
                     @apply text-sm;

@@ -1,5 +1,5 @@
-.hometop {
-    @apply text-white text-sm flex items-center justify-between min-h-[40px] max-w-[1200px] px-[15px] mx-auto mobile:hidden;
+.top {
+    @apply text-white text-sm bg-second-color flex items-center justify-between min-h-[40px] max-w-[1200px] px-[15px] mx-auto mobile:hidden;
 
     &-contact {
         @apply flex items-center gap-5;

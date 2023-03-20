@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "./HomeNav.module.scss";
-import { Wrapper } from "./Wrapper";
+import styles from "./HeaderNav.module.scss";
 
-function HomeNav() {
+function HeaderNav() {
     return (
-        <Wrapper>
+        <div className="bg-second-color">
             <div className={styles[`nav`]}>
                 <ul className={styles[`nav-list`]}>
                     <li>
@@ -27,8 +26,8 @@ function HomeNav() {
                     </li>
                 </ul>
             </div>
-        </Wrapper>
+        </div>
     );
 }
 
-export default HomeNav;
+export default HeaderNav;

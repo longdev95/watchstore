@@ -1,24 +1,23 @@
 import React from "react";
-import { Wrapper } from "./Wrapper";
-import styles from "./HomeTop.module.scss";
+import styles from "./HeaderTop.module.scss";
 
-const HomeTop = () => {
+const HeaderTop = () => {
     return (
-        <Wrapper>
-            <div className={styles[`hometop`]}>
-                <div className={styles[`hometop-contact`]}>
-                    <div className={styles[`hometop-contact-address`]}>
-                        <i class="fa-solid fa-location-dot"></i>
+        <div className="bg-second-color ">
+            <div className={styles[`top`]}>
+                <div className={styles[`top-contact`]}>
+                    <div className={styles[`top-contact-address`]}>
+                        <i className="fa-solid fa-location-dot"></i>
                         <span>
                             1234 Quang Trung, Phuong 8, Quan Go Vap, TPHCM
                         </span>
                     </div>
-                    <div className={styles[`hometop-contact-phone`]}>
-                        <i class="fa-solid fa-phone"></i>
+                    <div className={styles[`top-contact-phone`]}>
+                        <i className="fa-solid fa-phone"></i>
                         <span>0966260395</span>
                     </div>
                 </div>
-                <div className={styles[`hometop-social`]}>
+                <div className={styles[`top-social`]}>
                     <a href="">
                         <i className={`fa-brands fa-facebook fa-lg`}></i>
                     </a>
@@ -30,8 +29,8 @@ const HomeTop = () => {
                     </a>
                 </div>
             </div>
-        </Wrapper>
+        </div>
     );
 };
 
-export default HomeTop;
+export default HeaderTop;

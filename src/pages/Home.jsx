@@ -1,14 +1,12 @@
 import React from "react";
-import HomeMain from "../components/home/HomeMain";
-import HomeTop from "../components/home/HomeTop";
-import HomeNav from "../components/home/HomeNav";
+import Header from "../components/home/header/Header";
+import Slider from "../components/home/slider/Slider";
 
 function Home() {
     return (
         <React.Fragment>
-            <HomeTop />
-            <HomeMain />
-            <HomeNav />
+            <Header />
+            <Slider />
         </React.Fragment>
     );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./HomeMain.module.scss";
 import { Wrapper } from "./Wrapper";
+import brandLogo from "../../assets/brand-logo.png";
 
 function HomeMain() {
     return (
@@ -12,10 +13,7 @@ function HomeMain() {
                     </a>
                 </div>
                 <div className={styles[`homemain-logo`]}>
-                    <img
-                        src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/logo-mona-2.png"
-                        alt="shop-logo"
-                    />
+                    <img src={brandLogo} alt="shop-logo" />
                 </div>
                 <div className={styles[`homemain-search`]}>
                     <form action="" className={styles[`homemain-search-form`]}>

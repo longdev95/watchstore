@@ -5,11 +5,11 @@ import HeaderTop from "./HeaderTop";
 
 function Header() {
     return (
-        <React.Fragment>
+        <div className="relative">
             <HeaderTop />
             <HeaderMain />
             <HeaderNav />
-        </React.Fragment>
+        </div>
     );
 }
 

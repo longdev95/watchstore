@@ -1,3 +1,27 @@
-.slider-container {
-    @apply mobile:h-[450px] tablet:h-[600px] desktop:h-[600px] bg-gray-100;
+.carousels {
+  @apply h-[600px] w-[100vw] relative overflow-hidden;
+}
+
+.carousel {
+  @apply absolute top-0 bottom-0 h-[100%] w-[100%] opacity-0 flex justify-center transition-opacity duration-[1s] ease-linear;
+
+  img {
+    @apply bg-cover h-[100%] w-[100%] bg-right;
+  }
+
+  &-content {
+    @apply text-white absolute max-w-[1200px] h-[100%] px-[15px] mx-auto flex flex-col justify-center items-start gap-5;
+
+    h1 {
+      @apply font-bold text-[56px];
+    }
+
+    p {
+      @apply text-justify text-[#f1f1f1] text-[16px] leading-[1.6] w-[50%];
+    }
+  }
+}
+
+.active {
+  @apply opacity-100;
 }

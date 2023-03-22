@@ -1,23 +1,30 @@
 .carousels {
-  @apply h-[600px] w-[100vw] relative overflow-hidden;
+  @apply h-[300px] tablet:h-[450px] desktop:h-[600px] w-[100%] absolute overflow-hidden;
 }
 
 .carousel {
-  @apply absolute top-0 bottom-0 h-[100%] w-[100%] opacity-0 flex justify-center transition-opacity duration-[1s] ease-linear;
+  @apply absolute top-0 bottom-0 h-[100%] w-[100%] opacity-0 flex justify-center transition-opacity duration-[1s] ease-linear bg-[#222222];
 
   img {
-    @apply bg-cover h-[100%] w-[100%] bg-right;
+    @apply absolute mobile:object-cover tablet:object-cover desktop:object-fill h-[100%] w-[100vw] overflow-hidden;
   }
 
   &-content {
-    @apply text-white absolute max-w-[1200px] h-[100%] px-[15px] mx-auto flex flex-col justify-center items-start gap-5;
+    @apply text-white absolute max-w-[1230px] h-[100%] px-[15px]  flex flex-col justify-center items-start gap-5 mobile:ml-[5px] tablet:ml-[10px] desktop:ml-[15px];
 
     h1 {
-      @apply font-bold text-[56px];
+      @apply font-bold text-[38px] tablet:text-[56px] desktop:text-[56px];
     }
 
     p {
-      @apply text-justify text-[#f1f1f1] text-[16px] leading-[1.6] w-[50%];
+      @apply text-justify text-[#f1f1f1] leading-[1.6] w-[50%] text-[11px] tablet:text-[16px] desktop:text-[16px];
+    }
+
+    button {
+      @apply mt-6;
+      span {
+        @apply p-8 py-3 border border-white bg-black hover:bg-primary-color rounded-md text-[10px] desktop:text-[16px];
+      }
     }
   }
 }

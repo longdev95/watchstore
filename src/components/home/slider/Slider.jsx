@@ -38,6 +38,9 @@ function Slider() {
             <div className={styles[`carousel-content`]}>
               <h1>{obj.title}</h1>
               <p>{obj.description}</p>
+              <button>
+                <span>View product</span>
+              </button>
             </div>
           </div>
         );

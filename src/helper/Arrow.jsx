@@ -7,8 +7,8 @@ function Arrow({ direction, moveSlide }) {
       onClick={() => moveSlide()}
       className={`border border-gray-300 rounded-[50%] h-12 w-12 translate-y-[-50%] flex items-center justify-center absolute top-[50%] hover:translate-x-4 hover:duration-300 ${
         direction === "left"
-          ? "left-[50px] hover:-translate-x-4 ease-linear"
-          : "right-[50px] hover:translate-x-4 ease-linear"
+          ? "left-[50px] hover:translate-x-[-8px] ease-linear"
+          : "right-[50px] hover:translate-x-[8px] ease-linear"
       }`}
     >
       <FontAwesomeIcon

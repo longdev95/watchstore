@@ -22,7 +22,7 @@ function Slider() {
   };
 
   return (
-    <section className={styles.carousels}>
+    <div className={styles.carousels}>
       {dataCarousel.map((obj, index) => {
         return (
           <div
@@ -48,7 +48,7 @@ function Slider() {
 
       <Arrow direction={"left"} moveSlide={prevCarousel} />
       <Arrow direction={"right"} moveSlide={nextCarousel} />
-    </section>
+    </div>
   );
 }
 export default Slider;

@@ -1,0 +1,27 @@
+.trend-container {
+  @apply flex gap-[30px];
+}
+
+.trend {
+  @apply flex-1 h-[300px] relative overflow-hidden cursor-pointer;
+
+  &-img {
+    @apply h-[300px] absolute top-0 left-0 right-0 bottom-0;
+
+    &-bg {
+      @apply bg-cover bg-no-repeat bg-center absolute top-0 left-0 right-0 bottom-0;
+    }
+  }
+
+  &-content {
+    @apply text-white absolute top-[50%] translate-y-[-50%] left-10;
+
+    &-title {
+      @apply text-[20px] font-normal;
+    }
+
+    &-description {
+      @apply text-[40px] font-bold;
+    }
+  }
+}

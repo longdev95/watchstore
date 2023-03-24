@@ -5,7 +5,7 @@ import HeaderTop from "./HeaderTop";
 
 function Header() {
   return (
-    <div className="relative top-0 max-h-[200px]">
+    <div className="sticky top-0 h-[200px] w-[100%] z-10">
       <HeaderTop />
       <HeaderMain />
       <HeaderNav />

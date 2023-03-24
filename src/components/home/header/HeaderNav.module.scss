@@ -1,11 +1,11 @@
 .nav {
-    @apply text-white h-14 bg-second-color max-w-[1200px] mx-auto p-[15px] mobile:hidden;
+  @apply text-white h-[55px] bg-second-color max-w-[1200px] mx-auto p-[15px] mobile:hidden;
 
-    &-list {
-        @apply flex items-center justify-center text-[14px] font-bold h-[100%];
+  &-list {
+    @apply flex items-center justify-center text-[14px] font-bold h-[100%];
 
-        li {
-            @apply mx-8 py-3 hover:text-primary-color hover:underline hover:cursor-pointer hover:duration-200 hover:ease-in text-center;
-        }
+    li {
+      @apply mx-8 py-3 hover:text-primary-color hover:underline hover:cursor-pointer hover:duration-200 hover:ease-in text-center;
     }
+  }
 }

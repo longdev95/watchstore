@@ -1,34 +1,34 @@
 .carousels {
-  @apply h-[300px] tablet:h-[450px] desktop:h-[600px] w-[100%] absolute overflow-hidden;
-}
+  @apply h-[300px] tablet:h-[450px] desktop:h-[600px] w-[100%] relative overflow-hidden;
 
-.carousel {
-  @apply absolute top-0 bottom-0 h-[100%] w-[100%] opacity-0 flex justify-center transition-opacity duration-[1s] ease-linear bg-[#222222];
+  .carousel {
+    @apply absolute top-0 left-0 right-0 bottom-0 h-[100%] w-[100%] opacity-0 flex justify-center transition-opacity duration-[1s] ease-in-out bg-[#222222];
 
-  img {
-    @apply absolute mobile:object-cover tablet:object-cover desktop:object-fill h-[100%] w-[100vw] overflow-hidden;
-  }
-
-  &-content {
-    @apply text-white absolute max-w-[1230px] h-[100%] px-[15px]  flex flex-col justify-center items-start gap-5 mobile:ml-[5px] tablet:ml-[10px] desktop:ml-[15px];
-
-    h1 {
-      @apply font-bold text-[38px] tablet:text-[56px] desktop:text-[56px];
+    &.active {
+      @apply opacity-100;
     }
 
-    p {
-      @apply text-justify text-[#f1f1f1] leading-[1.6] w-[50%] text-[11px] tablet:text-[16px] desktop:text-[16px];
+    img {
+      @apply absolute top-0 left-0 right-0 bottom-0 mobile:object-cover tablet:object-cover desktop:object-fill h-[100%] w-[100vw] overflow-hidden;
     }
 
-    button {
-      @apply mt-6;
-      span {
-        @apply p-8 py-3 border border-white bg-black hover:bg-primary-color rounded-md text-[10px] desktop:text-[16px];
+    &-content {
+      @apply text-white absolute max-w-[1230px] h-[100%] px-[15px]  flex flex-col justify-center items-start gap-5 mobile:ml-[5px] tablet:ml-[10px] desktop:ml-[15px];
+
+      h1 {
+        @apply font-bold text-[38px] tablet:text-[56px] desktop:text-[56px];
+      }
+
+      p {
+        @apply text-justify text-[#f1f1f1] leading-[1.6] w-[50%] text-[11px] tablet:text-[16px] desktop:text-[16px];
+      }
+
+      button {
+        @apply mt-6;
+        span {
+          @apply p-8 py-3 border border-white bg-black hover:bg-primary-color rounded-md text-[10px] desktop:text-[16px];
+        }
       }
     }
   }
-}
-
-.active {
-  @apply opacity-100;
 }

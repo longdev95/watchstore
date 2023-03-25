@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="home-container relative h-[100vh] w-[100%]">
       <Header />
-      <main className="home-wrapper w-[100%] desktop:top-[200px] tablet:top-[200px]">
+      <main className="home-wrapper w-[100%] top-[100px] desktop:top-[200px] tablet:top-[200px]">
         <Slider />
         <Trend />
         <Trend />

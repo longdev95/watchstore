@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Slider.module.scss";
 
-import { dataCarousel } from "../../../dataCarousel";
+import { dataCarousel } from "../../../data";
 import Arrow from "../../../helper/Arrow";
 
 function Slider() {

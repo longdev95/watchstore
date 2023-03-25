@@ -9,7 +9,7 @@
     }
 
     img {
-      @apply absolute top-0 left-0 right-0 bottom-0 mobile:object-cover tablet:object-cover desktop:object-fill h-[100%] w-[100vw] overflow-hidden;
+      @apply absolute top-0 bottom-0 mobile:object-cover tablet:object-cover desktop:object-fill h-[100%] w-[100%] max-w-[1200px] overflow-hidden;
     }
 
     &-content {

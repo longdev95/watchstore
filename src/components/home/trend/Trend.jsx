@@ -2,15 +2,26 @@ import React from "react";
 import Card from "../../../helper/Card";
 import styles from "./Trend.module.scss";
 
-function Trend() {
+function Trend(props) {
+  console.log("Trend is rendering");
+
+  const img = props.img;
+
+  const imagePath1 = `src/assets/trend/trend-${img[0]}.jpg`;
+  const imagePath2 = `src/assets/trend/trend-${img[1]}.jpg`;
+
+  const classImage01 = `bg-[url(src/assets/trend/trend-${img[0]}.jpg)]`;
+  const classImage02 = `bg-[url(${imagePath2})]`;
+
   return (
     <Card>
       <section className={styles[`trend-container`]}>
         <div className={styles[`trend`]}>
           <div className={`${styles[`trend-img`]} group`}>
             <div
-              className={`bg-[url('/src/assets/trend/trend-1.jpg')] group-hover:scale-110 duration-700
-              ${styles[`trend-img-bg`]}`}
+              className={`group-hover:scale-110 duration-700
+              ${styles[`trend-img-bg`]}
+              ${classImage01}`}
             ></div>
           </div>
           <div className={styles[`trend-content`]}>
@@ -22,8 +33,9 @@ function Trend() {
         <div className={styles[`trend`]}>
           <div className={`${styles[`trend-img`]} group`}>
             <div
-              className={`bg-[url('/src/assets/trend/trend-2.jpg')] group-hover:scale-110 duration-700
-              ${styles[`trend-img-bg`]}`}
+              className={`group-hover:scale-110 duration-700
+              ${styles[`trend-img-bg`]}
+              ${classImage02}`}
             ></div>
           </div>
           <div className={styles[`trend-content`]}>

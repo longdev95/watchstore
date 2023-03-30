@@ -8,11 +8,11 @@ import Carousel from "../../Carousel/Carousel";
 
 const BestSeller = () => {
   return (
-    <Card>
+    <Card classes="max-w-[1230px]">
       <div className={styles.title}>
         <h1>Best Seller in month</h1>
       </div>
-      <Carousel show={4}>
+      <Carousel show={3}>
         {bestSellerData.map((item) => {
           return <BestSellerItem key={item.id} item={item} />;
         })}

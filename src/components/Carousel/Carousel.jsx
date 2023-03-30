@@ -72,14 +72,14 @@ const Carousel = (props) => {
               classes[`show-${show}`]
             }`}
             style={{
-              transform: `translateX(-${currentIndex * (100 / show)}%)`,
+              transform: `translateX(-${currentIndex * 100}%)`,
             }}
           >
             {children}
           </div>
         </div>
 
-        {currentIndex < length - 1 && (
+        {currentIndex < length - show && (
           <button
             onClick={next}
             className={`${classes.arrow} ${classes[`arrow-right`]}`}

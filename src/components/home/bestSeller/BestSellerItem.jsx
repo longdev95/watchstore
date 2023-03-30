@@ -7,7 +7,7 @@ const BestSellerItem = ({ item }) => {
   return (
     <div className={`${styles[`wrapper-item`]} group`}>
       <div className={styles[`item`]}>
-        <div className={styles.item}>
+        <div className={styles[`item-image`]}>
           <img src={item.path} alt="best-seller-img" />
         </div>
         <div className={styles.content}>

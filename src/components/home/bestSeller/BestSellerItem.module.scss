@@ -1,0 +1,27 @@
+.wrapper-item {
+  @apply border border-gray-300 cursor-pointer relative;
+}
+
+.content {
+  @apply w-[100%] py-[20px] flex flex-col gap-1 items-center border-t border-gray-300;
+
+  h1 {
+    @apply font-bold text-[#3a3a3a] text-[18px] text-center;
+  }
+
+  span {
+    @apply font-bold text-primary-color text-[16px] text-center;
+  }
+
+  button {
+    @apply text-white max-w-[150px] bg-primary-color px-3 py-1 rounded hover:bg-[#A07A61];
+  }
+}
+
+// .favorite {
+//   @apply absolute top-0 left-0 w-5 h-5 rounded-[50%] border border-[#c0c0c0] text-[#c0c0c0] opacity-0 transition-opacity duration-500 ease-in-out hover:bg-[#b20000] hover:text-white hover:border-[#b20000];
+// }
+
+.favorite {
+  @apply absolute top-0 right-0 z-20 mt-3 mr-3 py-2 rounded-[50%] max-w-[50px] border border-[#c0c0c0] text-[#c0c0c0] opacity-0 transition-opacity duration-500 ease-in-out hover:bg-[#b20000] hover:text-white hover:border-[#b20000];
+}

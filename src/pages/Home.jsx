@@ -11,9 +11,9 @@ function Home() {
       <Header />
       <main className="home-wrapper w-[100%] top-[100px] desktop:top-[200px] tablet:top-[200px]">
         <Slider />
-        <Trend img={[1, 2]} />
+        <Trend img={[0, 1]} />
         <BestSeller />
-        <Trend img={[3, 4]} />
+        <Trend img={[2, 3]} />
       </main>
     </div>
   );

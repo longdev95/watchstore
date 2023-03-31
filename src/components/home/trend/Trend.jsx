@@ -1,17 +1,15 @@
 import React from "react";
 import Card from "../../../helper/Card";
 import styles from "./Trend.module.scss";
+import { trendData } from "../../../data";
 
 function Trend(props) {
   console.log("Trend is rendering");
 
   const img = props.img;
 
-  const imagePath1 = `src/assets/trend/trend-${img[0]}.jpg`;
-  const imagePath2 = `src/assets/trend/trend-${img[1]}.jpg`;
-
-  const classImage01 = `bg-[url(src/assets/trend/trend-${img[0]}.jpg)]`;
-  const classImage02 = `bg-[url(${imagePath2})]`;
+  const classImage01 = `bg-[url('${trendData[img[0]].path}')]`;
+  const classImage02 = `bg-[url('${trendData[img[1]].path}')]`;
 
   return (
     <Card>

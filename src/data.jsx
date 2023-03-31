@@ -45,3 +45,22 @@ export const bestSellerData = [
     path: "/src/assets/bestSeller/product-05.png",
   },
 ];
+
+export const trendData = [
+  {
+    id: 1,
+    path: "src/assets/trend/trend-1.jpg",
+  },
+  {
+    id: 2,
+    path: "src/assets/trend/trend-2.jpg",
+  },
+  {
+    id: 3,
+    path: "src/assets/trend/trend-3.jpg",
+  },
+  {
+    id: 4,
+    path: "src/assets/trend/trend-4.jpg",
+  },
+];
